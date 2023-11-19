@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { displayNumericFormats } from './converter';
 
 function App() {
-  const [result, setResult] = React.useState<[number, string, string] | null>(null);
+  const [result, setResult] = React.useState<[string, string, string] | null>(null);
 
   const convert = () => {
     const inputNumber = (document.getElementById('inputNumber') as HTMLInputElement).value;
